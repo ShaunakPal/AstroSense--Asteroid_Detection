@@ -26,7 +26,7 @@ for fits_file in fits_files:
     plt.imshow(zscale(data), cmap="gray")
 
     #Save the image without graph markings
-    output_filename = os.path.splitext(fits_file)[0] + ".png"
+    output_filename = os.path.splitext(fits_file)[0] + ".jpg"
     output_path = os.path.join(output_folder, output_filename)
     print(f"Saving {fits_file} as {output_filename}")
     plt.savefig(output_path, bbox_inches='tight', pad_inches=0)
